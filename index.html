@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Library APP</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center"><i class="fas fa-book-open text-primary"></i> My<span
+            class="text-primary">Book</span>List</h1>
+            <form action="" id="book-form">
+                <div class="form-group">
+                    <label for="idi">ID</label>
+                    <input type="text" id="idi" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="year">Year</label>
+                    <input type="text" id="year" class="form-control">
+                </div>
+                <input type="submit" value="Add Book"
+                class="btn btn-primary btn-block">
+            </form>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Year</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="book-list"></tbody>
+            </table>
+
+
+
+            <script src="app.js"></script>
+</body>
+</html>
